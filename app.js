@@ -1,13 +1,13 @@
-const jokeButton = document.querySelector(".joke-button");
+const jokeButton = document.querySelector("#joke-button");
 const jokeDiv = document.querySelector(".joke-container");
 
 //  Background color change function:
 const randomColor = () => {
-  let r = Math.floor(Math.random() * 256);
-  let g = Math.floor(Math.random() * 256);
-  let b = Math.floor(Math.random() * 256);
+  let r = Math.floor(Math.random() * (256 - 100) + 100);
+  let g = Math.floor(Math.random() * (256 - 100) + 100);
+  let b = Math.floor(Math.random() * (256 - 100) + 100);
   let randomColor = `rgb(${r},${g},${b})`;
-  //   console.log(randomColor);
+  console.log(randomColor);
   document.body.style.backgroundColor = randomColor;
 };
 
