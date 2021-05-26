@@ -1,5 +1,12 @@
+const portfolioButton = document.querySelector("#return-button");
 const jokeButton = document.querySelector("#joke-button");
 const jokeDiv = document.querySelector(".joke-container");
+
+portfolioButton.addEventListener("click", () => {
+  window.location.replace("https://portfoliomax.netlify.app");
+});
+
+document.body.style.backgroundColor = "rgb(152, 136, 198)";
 
 //  Background color change function:
 const randomColor = () => {
@@ -24,4 +31,5 @@ const getJoke = async () => {
 jokeButton.addEventListener("click", (e) => {
   getJoke();
   randomColor();
+  e.target.innerHTML = "New Joke";
 });
