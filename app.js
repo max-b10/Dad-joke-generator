@@ -3,7 +3,7 @@ const jokeButton = document.querySelector("#joke-button");
 const jokeDiv = document.querySelector(".joke-container");
 
 portfolioButton.addEventListener("click", () => {
-  window.location.replace("https://portfoliomax.netlify.app");
+  window.location.replace("https://maxbungay.com");
 });
 
 document.body.style.backgroundColor = "rgb(152, 136, 198)";
